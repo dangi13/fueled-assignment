@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke" verbose="8">
+	<listeners>
+		<listener class-name="com.fueled.listeners.CustomReporter" />
+	</listeners>
+
+	<test name="AmazonTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="nodeURL" value="" /> <!-- any server/machine URL where grid is connected or cloud url e.g SauceLabs,BrowserStack 
+			etc -->
+		<classes>
+			<class name="com.fueled.tests.web.AmazonTest">
+				<methods>
+					<include name="test_add_to_cart_on_amazon_india" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="LoginTestFirefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="nodeURL" value="" />
+		<classes>
+			<class name="com.fueled.tests.web.LoginTest">
+				<methods>
+					<exclude name="validate_b2b_login" />
+					<include name="validate_dealer_login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+ --></suite>
