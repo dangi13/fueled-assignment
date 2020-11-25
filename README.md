@@ -1,6 +1,6 @@
 This is just a basic framework under development for automation of both Web and Mobile applications.
 
-Completely custom designed for `propper` project.
+Completely custom designed for `fueled` project.
 
 **How to Run test**
 
